@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Contact Us </title>
+<style>
+.item1{
+grid-area: head;
+font-size: 20px;	
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+
+.item2
+{grid-area: mid; padding: 20px;
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+.item3
+{grid-area: left; padding: 20px;
+}
+
+.item7
+{grid-area: footer1; padding: 20px;
+color: black;
+background-color:#282828;
+}
+.item8
+{grid-area: footer2; 
+padding: 10px;
+background-color: white;
+}
+
+.grid-container
+{
+display: grid;
+grid-template-areas:
+'head head head head mid mid'
+'left left left left left left'
+'footer1 footer1 footer1 footer1 footer1 footer1'
+'footer2 footer2 footer2 footer2 footer2 footer2'
+}
+
+.grid-container>div
+{
+color: black;
+font-family:cursive;
+text-align: center;
+}
+
+input[type=submit]
+{
+cursor: pointer;
+font-size: 20px;
+font-family: cursive;
+}
+
+p
+{
+font-weight: bold;
+font-size: 20px;
+color: #761804;
+display: inline-block;
+}
+
+img
+{
+cursor:pointer;
+}
+
+a
+{
+color:white;
+font-size:20px;
+float:center;
+}	
+
+</style>
+
+<script>
+function logout()
+{
+if(window.confirm("Do you want to logout?"))
+{
+window.location.href="login.html";
+}
+}
+function home()
+{
+window.location.href="movie.html";
+}
+
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+<div class="item1">
+<font color="WHITE"><marquee direction="right" style="font-size:30px;">GOFORMOVIE.COM</marquee></font>
+</div>
+
+<div class="item2">
+<form  style="float:right; display:inline;">
+<input type="submit" value="LOGOUT" onclick="logout(); return false;" >
+</form>
+<form style="display:inline; float:right;">
+<input type="submit" value="HOME" onclick="home(); return false;" >
+</form>
+</div>
+
+
+
+<div class="item3">
+<div id="a"><font color="#202020" size="20px">Need help? <br> Contact us..</font><br>
+<img src="phone.jpg" height="200px" width="200px"><br>
+<font size="4px">  022 6144 5050<br>022 3989 5050</font><br>
+</div>
+</div>
+
+
+<div class="item7"><u><center>
+<a href="About.html">About Us</a><br>
+<a href="faq.html">FAQ's</a><br>
+<a href="Contact.html">Contact Us</a><br>
+<a href="Privacy.html">Privacy Policy</a><br>
+</u>
+</center>
+</div>
+
+<div class="item8"><center>
+<img src="i1.png" width="30px" height="30px">
+<img src="i2.jpg" width="30px" height="30px">
+<img src="i3.jpg" width="30px" height="30px">
+<img src="i4.png" width="30px" height="30px">
+<img src="i5.png" width="30px" height="30px">
+<br>
+</center>
+</div>
+
+</div>
+</body>
+</html>

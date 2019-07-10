@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.item1{grid-area:d1;}
+.item2{grid-area:d2;}
+.item3{grid-area:d3;}
+.item4{grid-area:d4;}
+.item5{grid-area:d5;}
+.item6{grid-area:d6;}
+.item7{grid-area:d7;}
+.item8{grid-area:d8;}
+.item9{grid-area:d9;}
+.item10{grid-area:d10;}
+
+.grid-container
+{
+display:grid;
+grid-template-areas:
+'d1 d1 d1 d1 d1 d1'
+'d2 d2 d2 d2 d2 d2'
+'d3 d4 d4 d4 d4 d5'
+'d6 d4 d4 d4 d4 d7'
+'d8 d8 d8 d8 d8 d8'
+'d9 d9 d9 d9 d9 d9'
+'d10 d10 d10 d10 d10 d10'
+}
+
+.grid-container>div
+{
+background-color:black;
+color:white;
+font-family:cursive;
+text-align:center;
+padding:20px;
+}
+
+.image
+{
+width:600px;
+height:200px;
+}
+
+h1
+{
+color:#7FFF00;
+}
+
+.content
+{
+color:orange;
+font-size:20px;
+padding:1px;
+text-align:justify;
+}
+
+input[type=submit]
+{
+background-color:green;
+border:none;
+cursor:pointer;
+font-size:40px;
+float:center;
+font-family:cursive;
+border-radius:10%;
+}
+
+#a
+{
+background-color:yellow;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+<div class="item1" style="background-color:yellow;">
+<center>
+<p style="float:left;color:blue;">GOFORMOVIES.COM</p>
+<a href="movie.html" target="_blank" style="float:right;">HOME</a><br>
+</div>
+
+<div class="item2">
+<img src="m_cinemas_logo.jpg" alt="overview" class="image"> 
+</div>
+
+<div class="item3">
+<img src="parking.jpg" alt="parking" width="150px" height="150px"><br>
+<p>Availabilty of excellent parking facility.</p>
+</div>
+
+<div class="item4">
+<h1>M CINEMAS</h1>
+<p class="content">Situated in the heart of South Delhi, the old Sapna cinemas in now renovated to a new age plush M Cinemas.
+Equipped with the latest technology, M Cinemas is the world’s largest all recliner diner that houses 390seats and
+one of the largest screens in Delhi.<br>
+Some of the features which make this cinema the best movie experience are-<br>
+It’s the only theatre with 3D sound (Dolby Atmos technology) and 150 speaker installation in Delhi.
+Immersive sound experience that makes you feel like you are part of a movie
+One of the largest screen of 64 feet in Delhi
+2 level of movie watching, with 2 floors in one hall
+First 4k dual server projector in India for superior 3D experience
+The first and one of it's kind premium cinema promises to offer you an unmatched movie experience
+for all movie goers which will have you coming back for more.
+</div>
+
+<div class="item5">
+<img src="m_theater.jpg" width="150px" height="150px"><br>
+<p>Experience the luxury.</p>
+</div>
+
+<div class="item6">
+<img src="food.jpg" alt="food" width="150px" height="150px"><br>
+<p>Enjoy your movie along with the fun of eating.</p>
+</div>
+
+<div class="item7">
+<p>Modern bi-level movie theatre with reclining seats and 3D sound offering a variety of current films.<br>
+Address: 54, Community Center, East of Kailash, New Delhi, Delhi 110065<br>
+Phone: 096502 73047</p>
+</div>
+
+<div class="item8">
+<form onsubmit="myFuncn()" action="details.html">
+<input type="Submit" value="Proceed">
+</form>
+<script>
+function myFuncn()
+{
+b=confirm("Do you want to book?");
+if(b)
+{
+alert("Please Proceed");
+}
+else
+{
+alert("Cancelled!");
+}
+}
+</script>
+</div>
+
+<div class="item9">
+<center>
+<div id="a">
+<a href="faq.html">FAQ'S</a><br>
+<a href="About.html">ABOUT US</a><br>
+<a href="Privacy.html">PRIVACY POLICY</a><br>
+<a href="Contact.html">CONTACT US</a><br>
+</div>
+</div>
+
+<div class="item10">
+<img src="index.png" width="275px" height="75px">
+</div>
+
+</div>
+</body>
+</html>

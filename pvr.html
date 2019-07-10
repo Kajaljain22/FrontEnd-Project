@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.item1{grid-area:d1;}
+.item2{grid-area:d2;}
+.item3{grid-area:d3;}
+.item4{grid-area:d4;}
+.item5{grid-area:d5;}
+.item6{grid-area:d6;}
+.item7{grid-area:d7;}
+.item8{grid-area:d8;}
+.item9{grid-area:d9;}
+.item10{grid-area:d10;}
+
+.grid-container
+{
+display:grid;
+grid-template-areas:
+'d1 d1 d1 d1 d1 d1'
+'d2 d2 d2 d2 d2 d2'
+'d3 d4 d4 d4 d4 d5'
+'d6 d4 d4 d4 d4 d7'
+'d8 d8 d8 d8 d8 d8'
+'d9 d9 d9 d9 d9 d9'
+'d10 d10 d10 d10 d10 d10'
+}
+
+.grid-container>div
+{
+background-color:black;
+color:white;
+font-family:cursive;
+text-align:center;
+padding:10px;
+}
+
+.image
+{
+width:600px;
+height:200px;
+}
+
+h1
+{
+color:#7FFF00;
+}
+
+.content
+{
+color:orange;
+font-size:20px;
+padding:1px;
+text-align:justify;
+}
+
+input[type=submit]
+{
+background-color:green;
+border:none;
+cursor:pointer;
+font-size:40px;
+float:center;
+font-family:cursive;
+border-radius:10%;
+}
+
+#a
+{
+background-color:yellow;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+<div class="item1" style="background-color:yellow;">
+<center>
+<p style="float:left;color:blue;">GOFORMOVIES.COM</p>
+<a href="movie.html" target="_blank" style="float:right;">HOME</a><br>
+</div>
+
+<div class="item2">
+<img src="pvr_delhi.jpg" alt="overview" class="image"> 
+</div>
+
+<div class="item3">
+<img src="eticket.jpg" alt="eticket" width="150px" height="150px"><br>
+<p>Availabilty of e-ticket.</p>
+</div>
+
+<div class="item4">
+<h1>PVR CINEMAS</h1>
+<p class="content">There is a small bottle of water - 200ml or so.
+There is a small can/bottle of juice.
+There are menu provided in the tables between 2 seats from where you can order.
+There is a small button which you can press to get an usher to order food etc.
+The seats are sofa like and recline. You can lay horizontally and watch the movie.
+Type
+Public
+NSE: PVR
+BSE: 532689
+Industry	Entertainment (movie theatres)
+Founded	June 1997
+Headquarters	Gurgaon, Haryana, India
+Number of locations
+121
+Key people
+Ajay Bijli
+Chairman and Managing Director
+</div>
+
+<div class="item5">
+<img src="pvrseats.jpg" width="150px" height="150px"><br>
+<p>Experience the luxury and comfort.</p>
+</div>
+
+<div class="item6">
+<img src="pvrfood.jpg" alt="food" width="150px" height="150px"><br>
+<p>Enjoy your movie along with the fun of eating.</p>
+</div>
+
+<div class="item7">
+<p>LOCATION
+Select City Walk Mall | Saket, New Delhi 110002, India
+CONTACT
++91 99585 80201 Website www.pvrcinemas.com<br>
+</p>
+</div>
+
+<div class="item8">
+<form onsubmit="myFuncn()" action="details.html">
+<input type="Submit" value="Proceed">
+</form>
+<script>
+function myFuncn()
+{
+b=confirm("Do you want to book?");
+if(b)
+{
+alert("Please Proceed");
+}
+else
+{
+alert("Cancelled!");
+}
+}
+</script>
+</div>
+
+<div class="item9">
+<center>
+<div id="a">
+<a href="faq.html">FAQ'S</a><br>
+<a href="2nd document.html" target="_blank">ABOUT US</a><br>
+<a href="2nd document.html" target="_blank">PRIVACY POLICY</a><br>
+<a href="2nd document.html" target="_blank">CONTACT US</a><br>
+</div>
+</div>
+
+<div class="item10">
+<img src="index.png" width="275px" height="75px">
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Privacy policy </title>
+<style>
+.item1{
+grid-area: head;
+font-size: 20px;	
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+
+.item2
+{grid-area: mid; padding: 20px;
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+.item3
+{
+grid-area: left; padding: 20px;
+font-size: 25px;
+text-align: left;
+background-image: url("k3.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.item7
+{grid-area: footer1; padding: 20px;
+color: black;
+background-color:#282828;
+}
+.item8
+{grid-area: footer2; 
+padding: 10px;
+background-color: white;
+}
+
+.grid-container
+{
+display: grid;
+grid-template-areas:
+'head head head head mid mid'
+'left left left left left left'
+'footer1 footer1 footer1 footer1 footer1 footer1'
+'footer2 footer2 footer2 footer2 footer2 footer2'
+}
+
+.grid-container>div
+{
+color: black;
+font-family:cursive;
+text-align: center;
+}
+
+input[type=submit]
+{
+cursor: pointer;
+font-family: cursive;
+font-size: 20px;
+}
+
+p
+{
+font-family: cursive;
+font-size: 5px;
+color: #DA8787;
+}
+
+img
+{
+cursor:pointer;
+}
+
+a
+{
+color:white;
+font-size:20px;
+float:center;
+}	
+
+</style>
+
+<script>
+function logout()
+{
+if(window.confirm("Do you want to logout?"))
+{
+window.location.href="login.html";
+}
+}
+function home()
+{
+window.location.href="movie.html";
+}
+
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+<div class="item1">
+<font color="WHITE"><marquee direction="right" style="font-size:30px;">GOFORMOVIE.COM</marquee></font>
+</div>
+
+<div class="item2">
+<form  style="float:right; display:inline;">
+<input type="submit" value="LOGOUT" onclick="logout(); return false;" >
+</form>
+<form style="display:inline; float:right;">
+<input type="submit" value="HOME" onclick="home(); return false;" >
+</form>
+</div>
+
+
+<div class="item3">
+<b>
+GoForMovie.com respects your privacy and recognizes the need to protect the personally identifiable information (any information by which you can be identified, such as name, address, and telephone number) you share with us. We would like to assure you that we follow appropriate standards when it comes to protecting your privacy on our web sites.
+<br>
+<br>
+In general, you can visit goformovie website without telling us who you are or revealing any personal information about yourself. We track the Internet address of the domains from which people visit us and analyze this data for trends and statistics, but the individual user remains anonymous.
+<br>
+<br>
+Some of our web pages use "cookies" so that we can better serve you with customized information when you return to our site. Cookies are identifiers which a web site can send to your browser to keep on your computer to facilitate your next visit to our site. You can set your browser to notify you when you are sent a cookie, giving you the option to decide whether or not to accept it. The information we collect and analyze is used to improve our service to you.
+<br>
+<br>
+There are times when we may collect personal information from you such as name, physical address or telephone number. It is our intent to inform you before we do that and to tell you what we intend to do with the information. Generally, you will have the option not to provide the information, and in the future you will be able to "opt out" of certain uses of the information. If you choose not to provide the information we request, you can still visit the Goformovie website, but you may be unable to access certain options, offers and services.
+<br>
+<br>
+We will not sell, trade or disclose to third parties any information derived from the registration for, or use of, any online service (including names and addresses) without the consent of the user or customer (except as required by subpoena, search warrant, or other legal process or in the case of imminent physical harm to the user or others). Goformovie will allow suppliers to access the information for purposes of confirming your registration and providing you with benefits you are entitled to.
+<br>
+<br>
+Goformovie will take appropriate steps to protect the information you share with us. We have implemented technology and security features and strict policy guidelines to safeguard the privacy of your personally identifiable information from unauthorized access and improper use or disclosure. Goformovie will continue to enhance our security procedures as new technology becomes available.
+<br>
+<br>
+If our privacy policy changes in the future, it will be posted here and a new effective date will be shown. You should access our privacy policy regularly to ensure you understand our current policies. Please reference the privacy policy in your subject line. Goformovie will attempt to respond to all reasonable concerns or inquiries within five business days of receipt. 
+</b>
+</div>
+
+<div class="item7"><u><center>
+<a href="About.html">About Us</a><br>
+<a href="faq.html">FAQ's</a><br>
+<a href="Contact.html">Contact Us</a><br>
+<a href="Privacy.html">Privacy Policy</a><br>
+</u>
+</center>
+</div>
+
+<div class="item8"><center>
+<img src="i1.png" width="30px" height="30px">
+<img src="i2.jpg" width="30px" height="30px">
+<img src="i3.jpg" width="30px" height="30px">
+<img src="i4.png" width="30px" height="30px">
+<img src="i5.png" width="30px" height="30px">
+<br>
+</center>
+</div>
+
+</div>
+</body>
+</html>

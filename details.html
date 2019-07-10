@@ -1,0 +1,884 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.item1{grid-area:d1;}
+.item2{grid-area:d2;}
+.item3{grid-area:d3;}
+.item4{grid-area:d4;}
+.item5{grid-area:d5;}
+.item6{grid-area:d6;}
+.item7{grid-area:d7;}
+.item8{grid-area:d8;}
+.item11{grid-area:d11;}
+.item9{grid-area:d9;}
+.item10{grid-area:d10;}
+
+.grid-container
+{
+display:grid;
+grid-template-areas:
+'d1 d1 d1 d1 d1 d1'
+'d2 d2 d2 d2 d2 d2'
+'d3 d3 d3 d3 d3 d3'
+'d4 d4 d4 d4 d4 d4'
+'d5 d5 d5 d5 d5 d5'
+'d6 d6 d6 d6 d6 d6'
+'d7 d7 d7 d7 d7 d7'
+'d8 d8 d8 d11 d11 d11'
+'d9 d9 d9 d9 d9 d9'
+'d10 d10 d10 d10 d10 d10'
+}
+
+.grid-container>div
+{
+background-color:black;
+color:white;
+font-family:cursive;
+text-align:center;
+padding:20px;
+}
+
+#a
+{
+background-color:yellow;
+}
+
+select
+{
+width:50%;
+padding:10px 30px;
+border:none;
+border-radius:20px;
+background-color:yellow;
+font-size:20px;
+font-family:cursive;
+}
+
+input[type=submit]
+{
+background-color:yellow;
+border:none;
+cursor:pointer;
+font-size:40px;
+float:center;
+font-family:cursive;
+border-radius:10%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+
+<div class="item1"style="background-color:yellow;">
+<center>
+<p style="float:left;color:blue;">GOFORMOVIES.COM</p>
+<a href="movie.html" target="_blank" style="float:right;">HOME</a><br></div>
+<div class="item2">
+<img src="sonu.jpg" width="500px" height="200px" style="float:left;">
+<img src="m_cinemas_logo.jpg" width="500px" height="200px" style="float:right;">
+<img src="popcorn.jpg" width="200px" height="200px" style="float:center;">
+</div>
+<div class="item3">
+<form>
+<select name="Timing" id="n">
+<option value="-1">Select the show Timing</option>
+<option value="1">09:00 A.M</option>
+<option value="2">12:00 NOON</option>
+<option value="3">5:00 PM</option>
+</select><br>
+</form>
+<script>
+function abc()
+{
+if(document.getElementById("n").value=="-1")
+{
+alert("Please select the show timings");
+return false;
+}
+return(true);
+}
+</script>
+</div>
+<div class="item4">
+<form>
+<select name="Mode" id="m">
+<option value="-1">Select the Mode</option>
+<option value="1">2-D</option>
+<option value="2">3-D</option>
+</select><br>
+</form>
+<script>
+function bc()
+{
+if(document.getElementById("m").value=="-1")
+{
+alert("Please select the mode");
+return false;
+}
+return(true);
+}
+</script>
+</div>
+<div class="item5">
+<p>Please select the seats<br>Click on the one you want to have</p>
+<p style="float:left;">Platinum Rs. 300</p>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a" onclick="fa()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fa();">Click Me</text>
+</svg>
+<script>
+function fa(){
+    var a = document.getElementById('a');
+
+    a.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="b" onclick="fb()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fb();">Click Me</text>
+</svg>
+<script>
+function fb(){
+    var b = document.getElementById('b');
+
+    b.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="c" onclick="fc()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fc();">Click Me</text>
+</svg>
+<script>
+function fc(){
+    var c = document.getElementById('c');
+
+    c.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="d" onclick="fd()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fd();">Click Me</text>
+</svg>
+<script>
+function fd(){
+    var d = document.getElementById('d');
+
+    d.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="e" onclick="fe()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fe();">Click Me</text>
+</svg>
+<script>
+function fe(){
+    var e = document.getElementById('e');
+
+    e.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="f" onclick="ff()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="ff();">Click Me</text>
+</svg>
+<script>
+function ff(){
+    var f = document.getElementById('f');
+
+    f.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="g" onclick="fg()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fg();">Click Me</text>
+</svg>
+<script>
+function fg(){
+    var g = document.getElementById('g');
+
+    g.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="h" onclick="fh()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fh();">Click Me</text>
+</svg>
+<script>
+function fh(){
+    var h= document.getElementById('h');
+
+    h.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="i" onclick="fi()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fi();">Click Me</text>
+</svg>
+<script>
+function fi(){
+    var i = document.getElementBy('i');
+
+    i.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="j" onclick="fj()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fj();">Click Me</text>
+</svg>
+<script>
+function fj(){
+    var j = document.getElementById('j');
+
+    j.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="k" onclick="fk()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fk();">Click Me</text>
+</svg>
+<script>
+function fk(){
+    var k= document.getElementById('k');
+
+    k.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="l" onclick="fl()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fl();">Click Me</text>
+</svg>
+<script>
+function fl(){
+    var l = document.getElementById('l');
+
+    l.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="m" onclick="fm()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fm();">Click Me</text>
+</svg>
+<script>
+function fm(){
+    var m = document.getElementById('m');
+
+    m.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="n" onclick="fn()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fn();">Click Me</text>
+</svg>
+<script>
+function fn(){
+    var n = document.getElementById('n');
+
+    n.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="p" onclick="fp()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fp();">Click Me</text>
+</svg>
+<script>
+function fp(){
+    var p = document.getElementById('p');
+
+    p.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="q" onclick="fq()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fq();">Click Me</text>
+</svg>
+<script>
+function fq(){
+    var q = document.getElementById('q');
+
+    q.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="r" onclick="fr()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fr();">Click Me</text>
+</svg>
+<script>
+function fr(){
+    var r = document.getElementById('r');
+
+    r.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="s" onclick="fs()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fs();">Click Me</text>
+</svg>
+<script>
+function fs(){
+    var s = document.getElementById('s');
+
+   s.style.fill = 'rgb(255,0,0)';
+}
+</script>
+</div>
+<div class="item6">
+<p style="float:left">Gold Rs. 200</p>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a1" onclick="f1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f1();">Click Me</text>
+</svg>
+<script>
+function f1(){
+    var a1 = document.getElementById('a1');
+
+    a1.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a2" onclick="f2()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f2();">Click Me</text>
+</svg>
+<script>
+function f2(){
+    var a2 = document.getElementById('a2');
+
+    a2.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a3" onclick="f3()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f3();">Click Me</text>
+</svg>
+<script>
+function f3(){
+    var a3 = document.getElementById('a3');
+
+    a3.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a4" onclick="f4()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f4();">Click Me</text>
+</svg>
+<script>
+function f4(){
+    var a4 = document.getElementById('a4');
+
+    a4.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a5" onclick="f5()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f5();">Click Me</text>
+</svg>
+<script>
+function f5(){
+    var a5 = document.getElementById('a5');
+
+    a5.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a6" onclick="f6()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f6();">Click Me</text>
+</svg>
+<script>
+function f6(){
+    var a6 = document.getElementById('a6');
+
+   a6.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a7" onclick="f7()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f7();">Click Me</text>
+</svg>
+<script>
+function f7(){
+    var a7 = document.getElementById('a7');
+
+    a7.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a8" onclick="f8()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f8();">Click Me</text>
+</svg>
+<script>
+function f8(){
+    var a8= document.getElementById('a8');
+
+    a8.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a9" onclick="f9()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f9();">Click Me</text>
+</svg>
+<script>
+function f9(){
+    var a9 = document.getElementById('a9');
+
+    a9.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a10" onclick="f10()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f10();">Click Me</text>
+</svg>
+<script>
+function f10(){
+    var a10= document.getElementById('a10');
+
+    a10.style.fill = 'rgb(255,0,0)';
+}
+</script><br>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a11" onclick="f11()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f11();">Click Me</text>
+</svg>
+<script>
+function f11(){
+    var a11 = document.getElementById('a11');
+
+    a11.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a12" onclick="f12()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f12();">Click Me</text>
+</svg>
+<script>
+function f12(){
+    var a12 = document.getElementById('a12');
+
+    a12.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a13" onclick="f13()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f13();">Click Me</text>
+</svg>
+<script>
+function f13(){
+    var a13 = document.getElementById('a13');
+
+    a13.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a14" onclick="f14()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f14();">Click Me</text>
+</svg>
+<script>
+function f14(){
+    var a14 = document.getElementById('a14');
+
+    a14.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a15" onclick="f15()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f15();">Click Me</text>
+</svg>
+<script>
+function f15(){
+    var a15 = document.getElementById('a15');
+
+    a15.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a16" onclick="f16()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f16();">Click Me</text>
+</svg>
+<script>
+function f16(){
+    var a16 = document.getElementById('a16');
+
+    a16.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a17" onclick="f17()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f17();">Click Me</text>
+</svg>
+<script>
+function f17(){
+    var a17 = document.getElementById('a17');
+
+    a17.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a18" onclick="f18()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f18();">Click Me</text>
+</svg>
+<script>
+function f18(){
+    var a18 = document.getElementById('a18');
+
+    a18.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a19" onclick="f19()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f19();">Click Me</text>
+</svg>
+<script>
+function f19(){
+    var a19 = document.getElementById('a19');
+
+    a19.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a20" onclick="f20()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f20();">Click Me</text>
+</svg>
+<script>
+function f20(){
+    var a20 = document.getElementById('a20');
+
+    a20.style.fill = 'rgb(255,0,0)';
+}
+</script><br>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a21" onclick="f21()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f21();">Click Me</text>
+</svg>
+<script>
+function f21(){
+    var a21 = document.getElementById('a21');
+
+    a21.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a22" onclick="f22()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f22();">Click Me</text>
+</svg>
+<script>
+function f22(){
+    var a22 = document.getElementById('a22');
+
+    a22.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a23" onclick="f23()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f23();">Click Me</text>
+</svg>
+<script>
+function f23(){
+    var a23 = document.getElementById('a23');
+
+    a23.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a24" onclick="f24()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f24();">Click Me</text>
+</svg>
+<script>
+function f24(){
+    var a24 = document.getElementById('a24');
+
+    a24.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a25" onclick="f25()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f25();">Click Me</text>
+</svg>
+<script>
+function f25(){
+    var a25 = document.getElementById('a25');
+
+    a25.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a26" onclick="f26()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f26();">Click Me</text>
+</svg>
+<script>
+function f26(){
+    var a26 = document.getElementById('a26');
+
+    a26.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a27" onclick="f27()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f27();">Click Me</text>
+</svg>
+<script>
+function f27(){
+    var a27 = document.getElementById('a27');
+
+    a27.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a28" onclick="f28()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f28();">Click Me</text>
+</svg>
+<script>
+function f28(){
+    var a28 = document.getElementById('a28');
+
+    a28.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a29" onclick="f29()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f29();">Click Me</text>
+</svg>
+<script>
+function f29(){
+    var a29 = document.getElementById('a29');
+
+    a29.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a30" onclick="f30()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="f30();">Click Me</text>
+</svg>
+<script>
+function f30(){
+    var a30 = document.getElementById('a30');
+
+    a30.style.fill = 'rgb(255,0,0)';
+}
+</script>
+
+</div>
+<div class="item7">
+<p style="float:left;">Silver Rs. 150</p><svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="a0" onclick="fa1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fa1();">Click Me</text>
+</svg>
+<script>
+function fa1(){
+    var a0 = document.getElementById('a0');
+
+    a0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="b0" onclick="fb1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fb1();">Click Me</text>
+</svg>
+<script>
+function fb1(){
+    var b0 = document.getElementById('b0');
+
+    b0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="c0" onclick="fc1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fc1();">Click Me</text>
+</svg>
+<script>
+function fc1(){
+    var c0 = document.getElementById('c0');
+
+    c0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="d0" onclick="fd1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fd1();">Click Me</text>
+</svg>
+<script>
+function fd1(){
+    var d0 = document.getElementById('d0');
+
+    d0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="e0" onclick="fe1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fe1();">Click Me</text>
+</svg>
+<script>
+function fe1(){
+    var e0 = document.getElementById('e0');
+
+    e0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="f0" onclick="ff1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="ff1();">Click Me</text>
+</svg>
+<script>
+function ff1(){
+    var f0 = document.getElementById('f0');
+
+    f0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="g0" onclick="fg1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fg1();">Click Me</text>
+</svg>
+<script>
+function fg1(){
+    var g0 = document.getElementById('g0');
+
+    g0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="h0" onclick="fh1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fh1();">Click Me</text>
+</svg>
+<script>
+function fh1(){
+    var h0= document.getElementById('h0');
+
+    h0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="i0" onclick="fi1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fi1();">Click Me</text>
+</svg>
+<script>
+function fi1(){
+    var i0 = document.getElementBy('i0');
+
+    i0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="j0" onclick="fj1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fj1();">Click Me</text>
+</svg>
+<script>
+function fj1(){
+    var j0 = document.getElementById('j0');
+
+    j0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="k0" onclick="fk1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fk1();">Click Me</text>
+</svg>
+<script>
+function fk1(){
+    var k0= document.getElementById('k0');
+
+    k0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="l0" onclick="fl1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fl1();">Click Me</text>
+</svg>
+<script>
+function fl1(){
+    var l0 = document.getElementById('l0');
+
+    l0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="m0" onclick="fm1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fm1();">Click Me</text>
+</svg>
+<script>
+function fm1(){
+    var m0 = document.getElementById('m0');
+
+    m0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="n0" onclick="fn1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fn1();">Click Me</text>
+</svg>
+<script>
+function fn1(){
+    var n0 = document.getElementById('n0');
+
+    n0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="p0" onclick="fp1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fp1();">Click Me</text>
+</svg>
+<script>
+function fp1(){
+    var p0 = document.getElementById('p0');
+
+    p0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="q0" onclick="fq1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fq1();">Click Me</text>
+</svg>
+<script>
+function fq1(){
+    var q0 = document.getElementById('q0');
+
+    q0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="r0" onclick="fr1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fr1();">Click Me</text>
+</svg>
+<script>
+function fr1(){
+    var r0 = document.getElementById('r0');
+
+    r0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+<svg width="40" height="40">
+<rect width="300" height="100" style="fill:rgb(0,255,0);stroke-width:1;stroke:rgb(0,0,0)" id="s0" onclick="fs1()" />
+<text x="60" y="40" fill="white" font-size="40" onclick="fs1();">Click Me</text>
+</svg>
+<script>
+function fs1(){
+    var s0 = document.getElementById('s0');
+
+   s0.style.fill = 'rgb(255,0,0)';
+}
+</script>
+</div>
+<div class="item8"></div>
+<div class="item11">
+<form action="pay.html" onsubmit="abc()" onsubmit="bc()">
+<input type="Submit" value="Book now">
+</form>
+</div>
+<div class="item9">
+<center>
+<div id="a">
+<a href="faq.html">FAQ'S</a><br>
+<a href="About.html">ABOUT US</a><br>
+<a href="Privacy.html">PRIVACY POLICY</a><br>
+<a href="Contact.html">CONTACT US</a><br>
+</div>
+</div>
+
+<div class="item10">
+<img src="index.png" width="275px" height="75px"></div>
+</div>
+
+</body>
+</html>

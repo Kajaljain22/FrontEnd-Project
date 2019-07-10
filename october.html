@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> October </title>
+<style>
+.item0
+{
+grid-area: d0; padding: 20px;
+}
+.item1{
+grid-area: d1;
+font-size: 20px;	
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+.item2
+{grid-area: d2;
+font-size: 20px;
+padding:20px;
+background-image: url("k1.jpg");
+background-color: #00008B;
+}
+.item3
+{grid-area: d3; padding: 20px;
+background-image: url("k3.jpg");
+bakground-size: cover;
+bakground-repeat: no-repeat;
+}
+.item4
+{grid-area: d4; padding: 20px;}
+.item5
+{grid-area: d5; padding: 20px;}
+.item6
+{grid-area: d6; padding: 20px;
+background-image: url("k2.jpg");
+bakground-size: cover;
+}
+.item7
+{grid-area: d7; padding: 20px;
+font-size:20px;
+background-color:#282828;
+}
+.item8
+{grid-area: d8; 
+padding: 10px;
+background-color: white;
+}
+.item9
+{grid-area: d9; padding: 20px;
+}
+.item10
+{grid-area: d10; padding: 20px;
+}
+.item11
+{grid-area: d11; padding: 20px;
+}
+.item12
+{grid-area: d12; padding: 20px;
+}
+
+
+.grid-container
+{
+display: grid;
+grid-template-areas:
+'d1 d1 d1 d2 d2 d2'
+'d3 d3 d3 d3 d3 d3'
+'d4 d4 d5 d5 d5 d5'
+'d9 d9 d9 d9 d9 d9'
+'d6 d6 d6 d6 d6 d6'
+'d10 d10 d10 d11 d11 d11'
+'d12 d12 d12 d12 d12 d12'
+'d7 d7 d7 d7 d7 d7'
+'d8 d8 d8 d8 d8 d8'
+}
+
+.grid-container>div
+{
+font-family:cursive;
+}
+
+
+textarea
+{
+border: 2px solid grey;
+border-radius: 4px;
+}
+
+input[type=submit]
+{
+cursor: pointer;
+font-size: 20px;
+font-family: cursive;
+}
+
+
+h3
+{
+color:white;
+}
+
+h2
+{
+padding:0px;
+margin:0px;
+}
+
+p
+{
+padding:10px;
+font-size: 20px;
+display: inline-block;
+}
+a
+{
+color:white;
+}
+a:hover
+{
+color:#00BFFF;
+}
+img
+{
+cursor:pointer;
+}
+
+</style>
+
+<script>
+function comment()
+{
+alert("Comment saved!");
+}
+
+function home()
+{
+window.location.href="movie.html";
+}	
+function book()
+{
+window.location.href="theater1.html";
+}
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+<div class="item1">
+<font color="WHITE"><marquee direction="right" style="font-size:30px;">GOFORMOVIE.COM</marquee></font>
+</div>
+
+<div class="item2">
+<form style="display:inline; float:right;">
+<input type="submit" value="HOME" onclick="home(); return false;" >
+</form>
+<form style="display:inline; float:right;">
+<input type="submit" value="BOOK NOW" onclick="book(); return false;" >
+</form>
+</div>
+
+<div class="item3">
+<video controls muted>
+<source src="October.mp4">
+</video><br>
+</div>
+
+<div class="item4">
+<img src="october.jpg" height="200px" width="200px"><br><br>
+<h2 style="text-align:left;">OCTOBER</h2>
+<p style="text-align:left;">HINDI<br>
+DRAMA || ROMANCE<br>
+<img src="cal.png" height="20px" width="20px">13 Apr 2018
+<img src="dur.jpg" height="20px" width="20px">1 hrs 56 mins<br>
+</p>
+</div>
+
+
+<div class="item5">
+<br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<img src="heart.jpg" height="30px" width="30px"><p style="font-size:30px;">71%</p>9,149 votes
+<p>CRITICS RATING<br>
+<img src="gold.jpg" height="20px" width="20px"><img src="gold.jpg" height="20px" width="20px">
+<img src="gold.jpg" height="20px" width="20px"><img src="white.jpg" height="20px" width="20px">
+<img src="white.jpg" height="20px" width="20px"><br>
+</p>
+<p>USERS RATING<br>
+<img src="gold.jpg" height="20px" width="20px"><img src="gold.jpg" height="20px" width="20px">
+<img src="gold.jpg" height="20px" width="20px"><img src="white.jpg" height="20px" width="20px">
+<img src="white.jpg" height="20px" width="20px">
+</p>
+</div>
+
+
+<div class="item6">
+<p style="text-align:left; color:black"><b>SYNOPSIS</b><br><br>
+October is an intriguing tale of Dan who shares an unusual connection with Shuili. However, a tragedy befalls Dan and changes his perception towards love, life, and relationship. <br></p>
+</div>
+
+<div class="item9">
+<p style="text-align:left; color:grey;"><b>CAST AND CREW</b></p><br><br>
+<img src="varun.jpg" width="150px" height="150px" hspace="100px" style="border-radius:50%;">
+<img src="banita.jpg" width="150px" height="150px" style="border-radius:50%;">
+<img src="gitanjali.jpg" width="150px" height="150px" hspace="60px" style="border-radius:50%;">
+<img src="sahil.jpg" width="150px" height="150px" hspace="00px" style="border-radius:50%;"> 
+<img src="shoojit.jpg" width="150px" height="150px" hspace="80px" style="border-radius:50%;"><br>
+<center><p style="word-spacing:100px; margin-bottom:0px;">VarunDhawan BanitaSandhu GitanjaliRao SahilVedoliya ShoojitSircar </p></center>
+<center><p style="word-spacing:150px; margin-top:0px;">(Actor) (Actor) (Actor) (Actor) (Director)</p></center>
+</div>
+
+
+<div class="item10">
+<p style="text-align:left; color:grey;"><b>USER REVIEWS</b></p><br><br>
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%; display:inline;">
+<p style="display:inline; color:#708090;">Deepesh</p>
+<p style="margin:0px;">no action.. no gaane.. no melodrama.. no illogical script.. and this movies touches your heart. Varun has played the Dan effortlessly and we just can't help but fall in love with the innocence of Dan.. we should all learn and love our close ones with a pure heart and pure innocence.</p>
+
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%;">
+<p style="display:inline; color:#708090;">Vijit</p>
+<p style="margin:0px;">A story which lets you see a different side of Varun Dhawan which was last seen in Badlapur. A slow paced movie which keeps you engaged at all times</p>
+
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%;">
+<p style="display:inline; color:#708090;">Surbhi</p>
+<p style="margin:0px;">The movie was such an amazing piece of art. I never watched such a simple and still so amazing movie. The cinematography was amazing. Acting, well it was priceless; so realistic. I wish Bollywood would make more such amazing movies.</p>
+
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%;">
+<p style="display:inline; color:#708090;">Keshav</p>
+<p style="margin:0px;">it's a one time watch but a good movie. They have shown reality and not some fantasy shit of Bollywood. Also both the actors have acted really well</p>
+</div>
+
+
+
+<div class="item11">
+<p style="text-align:left; color:grey;"><b>CRITICS REVIEWS</b></p><br><br>
+<img src="ht.png" width="200px" height="100px">
+<p style="margin:0px;">October, a month in autumn, is more than just a symbol in Shoojit Sircars new film. It covers a lifetime. It brings haunting images, evokes tears, makes you anxious and then leaves you blank. Youre numb while waiting to return to reality. Youre battling with emotions and an entirely different story is playing in your subconscious. You know what you have just seen is more than just a film - its your story.</p><br><br>
+
+<img src="toi.png" width="200px" height="100px">
+<p style="margin:0px;">Shoojit Sircars October says a lot, without saying too much. Yes, it is a film about love, seen from Dans pure and simple world-view and Shuilis silent, stoic stares. Its not a story crafted with heavy doses of dialogues, romantic ballads or bombastic tropes common to the genre. The beauty lies in the simplicity of it all.</p><br><br>
+
+<img src="ndtv.png" width="150px" height="40px">
+<p style="margin:0px;">Shorn of all semblance of conventional melodrama, informed with an unhurried narrative rhythm and shored up by measured pivotal performances, Shoojit Sircar's October tells the story of an ineffable love that hangs by a tenuous thread between a young life on its last legs and an endearing drifter`s fond faith in miracles.</p><br>
+</div>
+
+
+
+<div class="item12">
+<form onsubmit="comment()">
+COMMENTS:<br>
+<textarea placeholder="Write something here.." rows="10" cols="100">
+</textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+
+
+
+
+<div class="item7"><u><center>
+<a href="About.html">About Us</a><br>
+<a href="FAQ.html">FAQ's</a><br>
+<a href="Contact.html">Contact Us</a><br>
+<a href="Privacy.html">Privacy Policy</a><br>
+</center>
+</u>
+</div>
+
+<div class="item8"><center>
+<img src="i1.png" width="30px" height="30px">
+<img src="i2.jpg" width="30px" height="30px">
+<img src="i3.jpg" width="30px" height="30px">
+<img src="i4.png" width="30px" height="30px">
+<img src="i5.png" width="30px" height="30px">
+<br>
+</center>
+</div>
+
+
+</div>
+</body>
+</html>

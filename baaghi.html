@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Baaghi 2 </title>
+<style>
+.item0
+{
+grid-area: d0; padding: 20px;
+}
+.item1{
+grid-area: d1;
+font-size: 20px;	
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+.item2
+{grid-area: d2;
+font-size: 20px;
+padding:20px;
+background-image: url("k1.jpg");
+background-color: #00008B;
+}
+.item3
+{grid-area: d3; padding: 20px;
+background-image: url("k3.jpg");
+bakground-size: cover;}
+.item4
+{grid-area: d4; padding: 20px;}
+.item5
+{grid-area: d5; padding: 20px;}
+.item6
+{grid-area: d6; padding: 20px;
+background-image: url("k2.jpg");
+bakground-size: cover;
+}
+.item7
+{grid-area: d7; padding: 20px;
+font-size:20px;
+background-color:#282828;
+}
+.item8
+{grid-area: d8; 
+padding: 10px;
+background-color: white;
+}
+.item9
+{grid-area: d9; padding: 20px;
+}
+.item10
+{grid-area: d10; padding: 20px;
+}
+.item11
+{grid-area: d11; padding: 20px;
+}
+.item12
+{grid-area: d12; padding: 20px;
+}
+
+
+.grid-container
+{
+display: grid;
+grid-template-areas:
+'d1 d1 d1 d2 d2 d2'
+'d3 d3 d3 d3 d3 d3'
+'d4 d4 d5 d5 d5 d5'
+'d9 d9 d9 d9 d9 d9'
+'d6 d6 d6 d6 d6 d6'
+'d10 d10 d10 d11 d11 d11'
+'d12 d12 d12 d12 d12 d12'
+'d7 d7 d7 d7 d7 d7'
+'d8 d8 d8 d8 d8 d8'
+}
+
+.grid-container>div
+{
+font-family:cursive;
+}
+
+textarea
+{
+border: 2px solid grey;
+border-radius: 4px;
+}
+
+input[type=submit]
+{
+cursor: pointer;
+font-size: 20px;
+font-family: cursive;
+}
+
+
+h3
+{
+color:white;
+}
+
+h2
+{
+padding:0px;
+margin:0px;
+}
+
+p
+{
+padding:10px;
+font-size: 20px;
+display: inline-block;
+}
+a
+{
+color:white;
+}
+a:hover
+{
+color:#00BFFF;
+}
+img
+{
+cursor:pointer;
+}
+
+</style>
+
+<script>
+function comment()
+{
+alert("Comment saved");
+}
+
+function home()
+{
+window.location.href="movie.html";
+}
+
+function book()
+{
+if(window.confirm("Proceed to book tickets?"))
+{
+window.location.href="theater1.html"
+}
+}
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+<div class="item1">
+<font color="WHITE"><marquee direction="right" style="font-size:30px;">GOFORMOVIE.COM</marquee></font>
+</div>
+
+<div class="item2">
+<form style="display:inline; float:right;">
+<input type="submit" value="HOME" onclick="home(); return false;" >
+</form>
+<form style="display:inline; float:right;">
+<input type="submit" value="BOOK NOW" onclick="book(); return false;" >
+</form>
+</div>
+
+<div class="item3">
+<video controls muted>
+<source src="Baaghi2.mp4">
+</video><br>
+</div>
+
+<div class="item4">
+<img src="k.jpg" height="150px" width="300px"><br><br>
+<h2 style="text-align:left;">BAAGHI 2</h2>
+<p style="text-align:left;">HINDI<br>
+ACTION || ROMANCE || THRILLER<br>
+<img src="cal.png" height="20px" width="20px">30 Mar 2018
+<img src="dur.jpg" height="20px" width="20px">2 hrs 25 mins<br>
+</p>
+</div>
+
+
+<div class="item5">
+<br><br><br><br><br><br><br><br><br>
+<img src="heart.jpg" height="30px" width="30px"><p style="font-size:30px;">73%</p>111,937 votes
+<p>CRITICS RATING<br>
+<img src="gold.jpg" height="20px" width="20px"><img src="gold.jpg" height="20px" width="20px">
+<img src="gold.jpg" height="20px" width="20px"><img src="white.jpg" height="20px" width="20px">
+<img src="white.jpg" height="20px" width="20px"><br>
+</p>
+<p>USERS RATING<br>
+<img src="gold.jpg" height="20px" width="20px"><img src="gold.jpg" height="20px" width="20px">
+<img src="gold.jpg" height="20px" width="20px"><img src="gold.jpg" height="20px" width="20px">
+<img src="white.jpg" height="20px" width="20px">
+</p>
+</div>
+
+
+<div class="item9">
+<p style="text-align:left; color:grey;"><b>CAST AND CREW</b></p><br><br>
+<img src="tiger.jpg" width="150px" height="150px" hspace="80px" style="border-radius:50%;">
+<img src="disha.jpg" width="150px" height="150px" hspace="10px" style="border-radius:50%;">
+<img src="manoj.jpg" width="150px" height="150px" hspace="80px" style="border-radius:50%;">
+<img src="randeep.jpg" width="150px" height="150px" hspace="10px" style="border-radius:50%;"> 
+<img src="ahmed.jpg" width="150px" height="150px" hspace="80px" style="border-radius:50%;"><br>
+<center><p style="word-spacing:120px; margin-bottom:0px;">TigerShroff DishaPatani ManojBajpai RandeepHooda AhmedKhan </p></center>
+<center><p style="word-spacing:170px; margin-top:0px;">(Actor) (Actor) (Actor) (Actor) (Director)</p></center>
+</div>
+
+
+<div class="item6">
+<p style="text-align:left; color:black"><b>SYNOPSIS</b><br><br>
+A battle-hardened army officer goes in search of his ex-lover's child who is mysteriously kidnapped. Neha reaches out to the only person who can help her with her plight, Ronnie. He goes deep into the underbelly of Goa, facing off against drug lords, menacing Russian henchmen, and blood thirsty animals. Daring stunts, chase sequences, air strikes, bomb blasts and other large-scale action sequences will be done with a bona-fide, larger than life approach, truly making it a spectacle.<br></p>
+</div>
+
+
+
+<div class="item10">
+<p style="text-align:left; color:grey;"><b>USER REVIEWS</b></p><br><br>
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%; display:inline;">
+<p style="display:inline; color:#708090;">Enrique</p>
+<p style="margin:0px;">Movie was awesome,stunts & fights are memorable. Songs are heart touching... so finally movie was..awesome.. If you think about this movie, then go for it...</p>
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%;">
+<p style="display:inline; color:#708090;">Drituti Kumar</p>
+<p style="margin:0px;">Awesome movie just nailed in the fight's. Can go and watch with kid's too.. Fighting scenes were awesome specially LSD was best and Bosco.. Dialogues were too good</p>
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%;">
+<p style="display:inline; color:#708090;">Amish</p>
+<p style="margin:0px;">Mind blowing 1st half , kept us engrossed with a logic but the last 30 minutes at the end logic went haywire...the suspense revealed at end was stupid ...could have been better...with a better plot.</p>
+<img src="profile.png" width="100px" height="100px" style="border-radius:50%;">
+<p style="display:inline; color:#708090;">Sahil</p>
+<p style="margin:0px;">Ahmed Khan needs a crash course on directing. And Tiger on acting. Music was awful. And the action scenes were like a video game. Randeep and Manoj were not utilised.</p>
+</div>
+
+
+
+<div class="item11">
+<p style="text-align:left; color:grey;"><b>CRITICS REVIEWS</b></p><br><br>
+<img src="ht.png" width="200px" height="100px">
+<p style="margin:0px;">Apart from a chase sequence of approximately 20 seconds and a couple of hand-to-hand combat scenes, Baaghi 2 fails to deliver. The background score which worked so well in Baaghi sounds like a noise this time. Its a mere show-reel for Tiger Shroff.</p><br><br>
+<img src="toi.png" width="200px" height="100px">
+<p style="margin:0px;">If you have grown up on Sylvester Stallone and Arnold Schwarzenegger movies, the sight of Tiger Shroff wreaking havoc as a one man army can be exhilarating. Tiger pulls off his trademark kicks and punches with effortless ease. He looks good as a ripped and intense soldier waging war against the bad guys. For most parts, the movie sticks to its leading man`s strengths and that`s a smart decision.</p><br><br>
+<img src="ndtv.png" width="150px" height="40px">
+<p style="margin:0px;">Baaghi 2 is a faithful remake of the 2016 Telugu thriller Kshanam. But since the leading man is Tiger Shroff, the protagonist changes from an investment banker to an army commando. Because if Tiger doesnt break bones, leap into helicopters and single-handedly defeat dozens of armed bad guys, would we even recognize him? What is the point of that painstakingly chiseled body if we dont see it being put to good use?</p><br>
+</div>
+
+
+
+<div class="item12">
+<form onsubmit="comment()">
+COMMENTS:<br>
+<textarea placeholder="Write something here.." rows="10" cols="100">
+</textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+
+
+
+<div class="item7"><u><center>
+<a href="About.html">About Us</a><br>
+<a href="FAQ.html">FAQ's</a><br>
+<a href="Contact.html">Contact Us</a><br>
+<a href="Privacy.html">Privacy Policy</a><br>
+</center>
+</u>
+</div>
+
+<div class="item8"><center>
+<img src="i1.png" width="30px" height="30px">
+<img src="i2.jpg" width="30px" height="30px">
+<img src="i3.jpg" width="30px" height="30px">
+<img src="i4.png" width="30px" height="30px">
+<img src="i5.png" width="30px" height="30px">
+<br>
+</center>
+</div>
+
+</div>
+</body>
+</html>

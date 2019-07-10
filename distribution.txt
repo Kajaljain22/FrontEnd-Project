@@ -1,0 +1,14 @@
+SHUBHAM:
+main page 
+create an account page
+payment page
+
+KAJAL:
+user login k
+home page k
+movie k
+
+PRIYANSHI:
+admin login
+theatre booking page
+seat booking page

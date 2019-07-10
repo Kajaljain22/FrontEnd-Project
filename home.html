@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> GoForMovie </title>
+<style>
+.item1{
+grid-area: head;
+font-size: 50px;
+padding-bottom: 200px;
+background-image: url(3.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.item2
+{grid-area: left; padding: 20px;
+}
+.item3
+{grid-area: main; padding: 20px;
+}
+.item4
+{grid-area: right; padding: 20px;}
+.item5
+{grid-area: mid; padding: 20px;
+}
+.item6
+{grid-area: mid2; padding: 20px;
+color: #761804;
+}
+.item7
+{grid-area: footer2; 
+padding: 10px;
+background-color: white;
+}
+.item8
+{grid-area: footer1; padding: 20px;
+color: black;
+background-color:#282828;
+}
+
+#image
+{
+border-radius: 50%;
+}
+
+.grid-container
+{
+display: grid;
+grid-template-areas:
+'head head head head head head'
+'mid2 mid2 mid2 mid2 mid2 mid2'
+'mid mid mid mid mid mid'
+'left left main main right right'
+'footer1 footer1 footer1 footer1 footer1 footer1'
+'footer2 footer2 footer2 footer2 footer2 footer2'
+}
+
+.grid-container>div
+{
+color: white;
+font-family:cursive;
+text-align: center;
+}
+
+#a
+{
+color: #761804;
+width:75%;
+padding:10px;
+background-color:white;
+}
+
+select
+{
+background-color: #FFEBCD;
+width: 30%;
+border: none;
+border-radius: 4px;
+padding: 10px 30px;
+display: inline-block;
+}
+
+
+input[type=submit]
+{
+cursor: pointer;
+font-size: 20px;
+font-family: cursive;
+}
+
+body
+{
+background-image:url("20.jpg");
+bakground-size:cover;
+}
+
+p
+{
+font-weight: bold;
+font-size: 20px;
+color: #761804;
+display: inline-block;
+}
+
+img
+{
+cursor:pointer;
+}
+
+#k
+{
+color:white;
+font-size:30px;
+padding-left:30px;
+float:center;
+}
+
+a
+{
+color:white;
+font-size:20px;
+float:center;
+}	
+
+#k:hover
+{
+color: #761804;}
+</style>
+
+<script>
+function logout()
+{
+if(window.confirm("Do you want to logout?"))
+{
+window.location.href="front.html"
+}
+}
+function valid()
+{
+if(document.getElementById("l").value=="0")
+{
+alert("Please select your city");
+}
+else
+{
+window.location.href="movie.html"
+}
+}
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+<div class="item1">
+<div style="background-color:rgba(0,0,0,0,5); margin-top:5px; padding-right:10px;">
+<form  style="float:right; display:inline;">
+<input type="submit" value="LOGOUT" onclick="logout(); return false;" >
+</form>
+</div>
+<center>
+<div style="border-radius:35px; font-family:cursive; margin-top:10%; font-size:60px; font-weight:bold; background:rgba(118,24,4,0.4); width:70%;">
+WELCOME TO GOFORMOVIE.COM</div>
+</center>
+</div>
+
+<div class="item6">
+<center>
+<p> Select your city </p>
+<form onsubmit="valid(); return false;">
+<select id="l">
+<option value="0">Select your city</option>
+<option value="1">DELHI</option>
+<option value="2">MUMBAI</option>
+<option value="3">KOLKATA</option>
+<option value="4">HYDERABAD</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<a href="movie.html"><img src="delhi.jpg" width="200px" height="200px" hspace="20px"></a>
+<a href="movie.html"><img src="mumbai.jpg" width="200px" height="200px" hspace="20px"></a>
+<a href="movie.html"><img src="kolkata.jpg" width="200px" height="200px" hspace="20px"></a>
+<a href="movie.html"><img src="hyd.jpg" width="200px" height="200px" hspace="20px"></a>
+<br>
+<p style="word-spacing:140px">DELHI MUMBAI KOLKATA HYDERABAD</p>
+</center>
+</div>
+
+<div class="item2">
+<center>
+<div id="a"><p><i>WHAT IS GOFORMOVIE.COM?</i></p><br>
+We're not what the movie's about, but how you experience it.<br>
+<img src="1.jpg" height="100px" width="100px"><br>
+We are a worldwide leader in advance movie ticketing, offering moviegoers a quick and easy way to purchase tickets.<br>
+<br>
+<img src="4.jpg" height="100px" width="100px"><br>
+We have a passion for movies and technology and are dedicated to fulfilling the needs of moviegoers worldwide.<br>
+<img src="2.jpg" height="100px" width="100px"><br>
+Our movieticketing knowhow allows us to create an experience you'll value as much as the movie themselves.<br>
+</div>
+</div>
+
+<div class="item3">
+<center>
+<div id="a"><p><i>WHY CHOOSE GOFORMOVIE.COM?</i></p><br>
+<img src="6.jpg" height="150px" width="250px"><br>
+Fulfill your ticketing and movie needs, in one place.
+<br>
+<big><b>1. Browse Movies</b></big><br>
+Find the movie you're looking for<br>
+<big><b>2. Discover theatres</b></big><br>
+Reserved seating, dine-in...let us help you find that special theatre. It's our specialty.<br>
+<big><b>3. Sort and personalize</b></big><br>
+We've addes filters to help you narrow down hundreds of movies and theatres to only those that matter to you.<br>
+<big><b>4. The MovieTickets Updates</b></big><br>
+Be in the know about new movie releases, trailers, casting news and box office updates- right from the source.<br>
+</div>
+</div>
+
+<div class="item4">
+<center>
+<div id="a"><p><i>PERKS OF JOINING!</i></p><br>
+<img id="image" src="5.jpg" width="200px" height="150px"><br>
+Create a goformovie.com account and upgrade your moviegoing experience.
+<br>
+<big><b>1.Order history</b></big><br>
+See all your ticket transactions from the last one month and reprint conformations.<br>
+<big><b>2. Quick checkout</b></big><br>
+Store your credit cards and save time! Quick checkout allows you to buy tickets by just entering your password.<br>
+<big><b>3. Special offers</b></big><br>
+By completing your profile, you may qualify for our exclusive gift with purchase offers and sweepstakes.<br>
+</div>
+</div>
+
+<div class="item5">
+<marquee><img src="m1.jpg" width="200px" height="200px">
+<img src="m2.jpg" width="200px" height="200px">
+<img src="m3.jpg" width="200px" height="200px">
+<img src="m4.jpg" width="200px" height="200px">
+<img src="m5.jpg" width="200px" height="200px">
+<img src="m6.jpg" width="200px" height="200px">
+<img src="m7.jpg" width="200px" height="200px">
+<img src="m8.jpg" width="200px" height="200px">
+<img src="m9.jpg" width="200px" height="200px">
+<img src="m10.jpg" width="200px" height="200px">
+<img src="m11.jpg" width="200px" height="200px">
+<img src="m12.jpg" width="200px" height="200px">
+</marquee>
+</div>
+
+
+<div class="item8"><u><center>
+<a href="About.html">About Us</a><br>
+<a href="faq.html">FAQ's</a><br>
+<a href="Contact.html">Contact Us</a><br>
+<a href="Privacy.html">Privacy Policy</a><br>
+</u>
+</center>
+</div>
+
+<div class="item7"><center>
+<img src="i1.png" width="30px" height="30px">
+<img src="i2.jpg" width="30px" height="30px">
+<img src="i3.jpg" width="30px" height="30px">
+<img src="i4.png" width="30px" height="30px">
+<img src="i5.png" width="30px" height="30px">
+<br>
+</center>
+</div>
+
+</div>
+</body>
+</html>

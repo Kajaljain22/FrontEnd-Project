@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+<title>ADMIN LOGIN</title>
+
+<style>
+
+body
+{
+background-image:url(banner.jpg);
+background-repeat:no repeat;
+background-size:cover;
+font-size:20px;
+color:#00FFFF;
+font-family:cursive;
+padding:10px 20px;
+}
+
+input[type=text], input[type=password]
+{
+width:50%;
+padding:15px 20px;
+border-radius:10px;
+border:2px solid #FBB43F;
+background-color:orange;
+font-size:20px;
+font-family:cursive;
+text-align:center;
+}
+
+input[type=submit]
+{
+background-color:orange;
+border:none;
+cursor:pointer;
+font-size:40px;
+float:center;
+font-family:cursive;
+border-radius:10%;
+}
+
+input[type=image]
+{
+width:150px;
+height:100px;
+cursor:pointer;
+border-radius:10%;
+
+}
+
+h1
+{
+color:#7FFF00;
+}
+
+p
+{
+color:orange;
+font-size:20px;
+padding:1px;
+}
+
+</style>
+</head>
+
+<body>
+<h1><u>ADMIN LOGIN:</h1></u>
+<p>Please Login to continue</p>
+<form onsubmit="myfuncn()" action="home.html">
+<b>USERNAME:<b><input type="text" placeholder="max_length_20" size="20" maxlength="20"><br><br>
+<b>PASSWORD:<b><input type="password" placeholder="max_length_20" size="20" maxlength="20"><br><br><br>
+<center>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b><input type="image" src="submit.jpg" alt="submit"></b></center>
+<p>Forgot password?</p>
+<a href="change_password.aspx">Change_password</a>
+</form>
+<script>
+function myfuncn()
+{
+b=confirm("Do you want to submit?");
+if(b)
+{
+alert("Successful");
+}
+else
+{
+alert("Fill again");
+}
+}
+</script>
+</body>
+</html>

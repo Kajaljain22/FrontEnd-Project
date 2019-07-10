@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> GoForMovie </title>
+<style>
+.item0
+{
+grid-area: d0; padding: 20px;
+}
+.item1{
+grid-area: d1;
+font-size: 20px;	
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+.item2
+{grid-area: d2;
+font-size: 20px;
+padding:20px;
+background-image: url("k1.jpg");
+bakground-size: cover;
+background-color: #00008B;
+}
+.item3
+{grid-area: d3; padding: 20px;
+font-size:20px;}
+.item4
+{grid-area: d4; padding: 20px;font-size:20px;}
+.item5
+{grid-area: d5; padding: 20px;
+background-color: #FF8C00;
+font-size:20px;}
+.item6
+{grid-area: d6; padding: 20px;}
+.item7
+{grid-area: d7; padding: 20px;
+font-size:20px;
+background-color:#282828;
+
+}
+.item8
+{grid-area: d8; 
+padding: 10px;
+background-color: white;
+}
+.item9
+{grid-area: d9; padding: 20px;}
+.item10
+{grid-area: d10; padding: 20px;
+font-size:30px;}
+.item11
+{grid-area: d11;}
+.item12
+{grid-area: d12; padding: 20px;}
+
+
+
+.grid-container
+{
+display: grid;
+grid-template-areas:
+'d1 d1 d1 d2 d2 d2'
+'d3 d3 d3 d3 d3 d3'
+'d4 d4 d4 d4 d4 d4'
+'d5 d5 d5 d5 d5 d5'
+'d10 d10 d10 d10 d10 d10'
+'d0 d0 d6 d6 d9 d9'
+'d12 d12 d12 d12 d12 d12'
+'d11 d11 d11 d11 d11 d11'
+'d7 d7 d7 d7 d7 d7'
+'d8 d8 d8 d8 d8 d8'
+}
+
+.grid-container>div
+{
+font-family:cursive;
+text-align: center;
+color: black;
+}
+
+
+input[type=submit]
+{
+cursor: pointer;
+font-size: 20px;
+font-family: cursive;
+}
+
+
+#a
+{
+color: #761804;
+width:75%;
+padding:10px;
+background-color:white;
+}
+
+
+h3
+{
+color:white;
+}
+
+p
+{
+padding-:10px;
+font-weight: bold;
+font-size: 20px;
+color: #761804;
+display: inline-block;
+}
+a
+{
+color:white;
+}
+a:hover
+{
+color:#00BFFF;
+}
+img
+{
+cursor:pointer;
+}
+
+</style>
+
+<script>
+function logout()
+{
+if(window.confirm("Do you want to logout?"))
+{
+window.location.href="front.html"
+}
+}
+
+function change()
+{
+if(window.confirm("Do you want to change your location?"))
+{
+window.location.href="home.html"
+}
+}
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+<div class="item1">
+<font color="WHITE"><marquee direction="right" style="font-size:30px;">GOFORMOVIE.COM</marquee></font>
+</div>
+
+<div class="item2">
+<form style="display:inline; float:right;">
+<input type="submit" value="LOGOUT" onclick="logout(); return false;" >
+</form>
+<form style="display:inline; float:right;">
+<input type="submit" value="Change City" onclick="change(); return false;" >
+</form>
+</div>
+
+<div class="item3" style="text-align:left;">
+<b>NOW SHOWING</b><br><br>
+<a href="baaghi.html"><img src="m1.jpg" width="200px" height="200px"></a>
+<img src="m5.jpg" width="200px" height="200px">
+<a href="october.html"><img src="m2.jpg" width="200px" height="200px"></a>
+<a href="sonuk.html"><img src="m11.jpg" width="200px" height="200px"></a>
+<img src="m3.jpg" width="200px" height="200px">
+<img src="m6.jpg" width="200px" height="200px">
+</div>
+
+<div class="item4" style="text-align:left;">
+<b>UPCOMING</b><br><br>
+<img src="m7.jpg" width="200px" height="200px">
+<img src="m8.jpg" width="200px" height="200px">
+<img src="m12.jpg" width="200px" height="200px">
+<img src="m4.jpg" width="200px" height="200px">
+<img src="m9.jpg" width="200px" height="200px">
+<img src="m10.jpg" width="200px" height="200px">
+</div>
+
+<div class="item5">
+<b>Avengers:Infinity War - In Theaters April 27</b><br>
+</div>
+
+<div class="item10">
+<b>BLOCKBUSTERS OF 2018</b><br>
+<font color="#B87333" size="5px">(BOX OFFICE HITS)</font><br>
+<br>
+<img src="tigerzindahai.jpg" width="200px" height="250px" hspace="20px">
+<img src="m1.jpg" width="200px" height="225px" hspace="20px">
+<img src="m11.jpg" width="200px" height="200px" hspace="20px">
+<img src="padmaavat.jpg" width="200px" height="170px" hspace="20px">
+</div>
+
+
+
+<div class="item0">
+<center>
+<div id="a"><p><i>WHAT IS GOFORMOVIE.COM?</i></p><br>
+We're not what the movie's about, but how you experience it.<br>
+<img src="1.jpg" height="100px" width="100px"><br>
+We are a worldwide leader in advance movie ticketing, offering moviegoers a quick and easy way to purchase tickets.<br>
+<br>
+<img src="4.jpg" height="100px" width="100px"><br>
+We have a passion for movies and technology and are dedicated to fulfilling the needs of moviegoers worldwide.<br>
+<img src="2.jpg" height="100px" width="100px"><br>
+Our movieticketing knowhow allows us to create an experience you'll value as much as the movie themselves.<br>
+</div>
+</div>
+
+<div class="item6">
+<center>
+<div id="a"><p><i>WHY CHOOSE GOFORMOVIE.COM?</i></p><br>
+<img src="6.jpg" height="150px" width="250px"><br>
+Fulfill your ticketing and movie needs, in one place.
+<br>
+<big><b>1. Browse Movies</b></big><br>
+Find the movie you're looking for<br>
+<big><b>2. Discover theatres</b></big><br>
+Reserved seating, dine-in...let us help you find that special theatre. It's our specialty.<br>
+<big><b>3. Sort and personalize</b></big><br>
+We've addes filters to help you narrow down hundreds of movies and theatres to only those that matter to you.<br>
+<big><b>4. The MovieTickets Updates</b></big><br>
+Be in the know about new movie releases, trailers, casting news and box office updates- right from the source.<br>
+</div>
+</div>
+
+
+<div class="item9">
+<center>
+<div id="a"><p><i>PERKS OF JOINING!</i></p><br>
+<img id="image" src="5.jpg" width="200px" height="150px"><br>
+Create a goformovie.com account and upgrade your moviegoing experience.
+<br>
+<big><b>1.Order history</b></big><br>
+See all your ticket transactions from the last one month and reprint conformations.<br>
+<big><b>2. Quick checkout</b></big><br>
+Store your credit cards and save time! Quick checkout allows you to buy tickets by just entering your password.<br>
+<big><b>3. Special offers</b></big><br>
+By completing your profile, you may qualify for our exclusive gift with purchase offers and sweepstakes.<br>
+</div>
+</div>
+
+
+<div class="item12">
+<font color="grey" size="30px">Media - TV, NewsPaper, Online & Radio Love us!</font><br>
+<img src="business.jpg" width="200px" height="200px" hspace="20px">
+<img src="economic.jpg" width="200px" height="200px" hspace="20px">
+<img src="dainik.jpg" width="200px" height="200px" hspace="20px">
+<img src="dna.jpg" width="200px" height="200px" hspace="20px">
+<img src="indian.jpg" width="200px" height="200px" hspace="20px"><br>
+</div>
+
+
+<div class="item11">
+<img src="stuff.jpg" width="100%">
+</div>
+
+
+<div class="item7"><u><center>
+<a href="About.html">About Us</a><br>
+<a href="faq.html">FAQ's</a><br>
+<a href="Contact.html">Contact Us</a><br>
+<a href="Privacy.html">Privacy Policy</a><br>
+</center>
+</u>
+</div>
+
+<div class="item8"><center>
+<img src="i1.png" width="30px" height="30px">
+<img src="i2.jpg" width="30px" height="30px">
+<img src="i3.jpg" width="30px" height="30px">
+<img src="i4.png" width="30px" height="30px">
+<img src="i5.png" width="30px" height="30px">
+<br>
+</center>
+</div>
+
+</div>
+</body>
+</html>

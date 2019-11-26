@@ -1,3 +1,2 @@
 # HTML
-HTML project
 Open home.html to start browsing...
